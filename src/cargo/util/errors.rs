@@ -431,7 +431,7 @@ pub fn process_error(msg: &str,
                 libc::SIGSEGV => ", SIGSEGV: invalid memory reference",
                 libc::SIGTERM => ", SIGTERM: termination signal",
                 libc::SIGBUS => ", SIGBUS: access to undefined memory",
-                libc::SIGSYS => ", SIGSYS: bad system call",
+                25 => ", SIGSYS: bad system call",
                 libc::SIGTRAP => ", SIGTRAP: trace/breakpoint trap",
                 _ => "",
             };
