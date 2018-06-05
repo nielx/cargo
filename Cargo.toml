@@ -68,6 +68,9 @@ cargotest = { path = "tests/cargotest" }
 filetime = "0.1"
 hamcrest = "=0.1.1"
 
+[replace]
+"backtrace:0.3.3" = { git = "https://github.com/nielx/backtrace-rs", branch = "haiku-0.3.3" }
+
 [[bin]]
 name = "cargo"
 test = false
